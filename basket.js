@@ -94,7 +94,7 @@ function contentsBasket() {
         totalAmount += elem.amount
         totalSumm += goods[elem.goodId].price * elem.amount;
     });
-    return `В корзине ${totalAmount} позиций на сумму ${totalSumm}`
+    return {"totalAmount": totalAmount, "totalSumm": totalSumm}
 }
 
 
